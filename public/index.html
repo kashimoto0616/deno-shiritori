@@ -1,7 +1,11 @@
+
 <!DOCTYPE html>
 
 <html>
-
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <div class="content">
 
 <head>
 
@@ -16,11 +20,14 @@
 
   <h1>しりとり</h1>
 
-  <p id="previousWord"></p>
+ <p id="previousWord"></p>
 
-  <input id="nextWordInput" type="text" />
+  <input id="nextWordInput" type="text" pattern="[あ-ん]*"/>
+
 
   <button id="nextWordSendButton">送信</button>
+
+  
 
 
   <script type="module">
@@ -35,7 +42,7 @@
       const para = document.querySelector("#previousWord");
 
       para.innerText = `前の単語：${previousWord}`;
-
+       
     };
 
 
@@ -73,6 +80,6 @@
   </script>
 
 </body>
-
+    </div>
 
 </html>
